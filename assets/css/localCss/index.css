@@ -95,7 +95,7 @@ section.c-main-home {
   color: var(--light-mode-text);
   font-family: var(--font);
   font-weight: 600;
-  font-size: 0.7em;
+  font-size: 0.8em;
   caret-color: var(--light-mode-text);
   width: 330px;
 }
@@ -138,7 +138,7 @@ section.c-main-home {
   padding: 0.6em 1em;
   color: var(--light-mode-text);
   font-family: var(--font);
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 600;
 }
 .item-option .dropdown button:active {
