@@ -2,8 +2,17 @@
 
 :root {
   --font: 'Nunito Sans', sans-serif;
+  --Light-Mode-Background: hsl(0, 0%, 98%);
+  --light-mode-text: hsl(200, 15%, 8%);
+  --Light-Mode-Input: hsl(0, 0%, 52%);
+  --Light-Mode-Elements: hsl(0, 0%, 100%);
+  --shadow-navbar: rgba(0, 0, 0, 0.5);
 }
-
+html[data-color-mode='dark'] {
+  --Light-Mode-Background: hsl(207, 26%, 17%);
+  --light-mode-text: hsl(0, 0%, 100%);
+  --Light-Mode-Elements: hsl(209, 23%, 22%);
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +22,37 @@
 main.template-home {
   position: relative;
   top: 0;
+  background: var(--Light-Mode-Background);
   left: 0;
   width: 100%;
   height: 200vh;
+}
+
+/* CODE FOR NAVBAR */
+nav.navbar {
+  box-shadow: 0 0em 1em -5px var(--shadow-navbar);
+  padding: 1em 0.5em;
+  background: var(--Light-Mode-Elements);
+  font-family: var(--font);
+}
+.navbar .nav-title {
+  font-weight: 800;
+  color: var(--light-mode-text);
+
+  transition: 0.3s;
+}
+
+.btn-mode {
+  transition: 0.3s;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  outline: none;
+  color: var(--light-mode-text);
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.btn-mode:active {
+  border: none;
 }
