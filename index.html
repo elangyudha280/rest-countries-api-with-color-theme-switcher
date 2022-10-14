@@ -15,7 +15,7 @@
 
       <!-- code for navbar -->
 
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar nav-home navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand nav-title" href="#">Where in the world?</a>
           <button class=" btn-mode ml-auto">
@@ -33,11 +33,39 @@
 
         <section class="container c-main-home">
 
+          <!-- nav search country -->
+
+          <nav class="navbar nav-country ">
+            <div class="container-fluid c-nav-country">
+                <div class="item-nav-country item-search">
+                    <input type="search" class="input-search" placeholder="Search for a country...">
+                    <div class="icon-input-search">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="item-nav-country item-option">
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Filter by Region
+                    </button>
+                    <ul class="dropdown-menu dropdown-option">
+                      <li><span class="dropdown-item" href="#">Action</span></li>
+                      <li><span class="dropdown-item" href="#">Another action</span></li>
+                      <li><span class="dropdown-item" href="#">Something else here</span></li>
+                    </ul>
+                  </div>
+                </div>  
+            </div>
+          </nav>
+
+          <!-- end nad search country -->
+
         </section>
 
       <!-- end  code for section main container -->
 
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/localJs/index.js"></script>
   </body>
