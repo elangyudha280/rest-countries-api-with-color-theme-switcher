@@ -1,3 +1,10 @@
+// import module api
+import api from '../modules/api.mjs'
+
+// import module element html home card
+import htmlHomeCard from '../modules/htmlHomeCard.mjs'
+
+
 
 
 // fitur dark and light mode
@@ -11,3 +18,8 @@ btn_mode.addEventListener('click',function(){
         html_element.dataset.colorMode = 'light'
     }
 })
+
+
+// FITUR GET ALL DATA API
+
+// api.getApi('https://restcountries.com/v3.1/all',htmlHomeCard)
