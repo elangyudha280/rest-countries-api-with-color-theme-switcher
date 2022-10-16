@@ -22,4 +22,4 @@ btn_mode.addEventListener('click',function(){
 
 // FITUR GET ALL DATA API
 
-// api.getApi('https://restcountries.com/v3.1/all',htmlHomeCard)
+api.getApi('https://restcountries.com/v3.1/all',htmlHomeCard)
