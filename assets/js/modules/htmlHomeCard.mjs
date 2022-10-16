@@ -1,7 +1,7 @@
 
 
 // import fitur parse string to string 
-import numberWithComas from 'ParseToString.js'
+import numberWithCommas from './ParseToString.mjs'
 
 function elementCardHome(data){
     let fragmentContainer = document.querySelector('.container-country-home')
@@ -14,7 +14,7 @@ function elementCardHome(data){
         </div>
         <div class="card-body">
             <h6 class="title-card-country">${el.name.common}</h6>
-            <p class="desc-population">Population: <span class="num-population">${numberWithComas(el.population)}</span></p>
+            <p class="desc-population">Population: <span class="num-population">${numberWithCommas(el.population)}</span></p>
             <p class="desc-region">Region: <span class="num-region">${el.region}</span></p>
             <p class="desc-capital">Capital: <span class="num-capital">${el.capital}</span></p>
         </div>

@@ -274,10 +274,6 @@ section.container-country-home {
 }
 
 @media screen and (max-width: 500px) {
-  main.template-home {
-    height: auto;
-    padding-bottom: 2em;
-  }
   section.container-country-home {
     position: relative;
     height: auto;
