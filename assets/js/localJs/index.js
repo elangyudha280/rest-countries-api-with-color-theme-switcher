@@ -3,7 +3,7 @@
 import api from '../modules/api.mjs'
 
 // import module element html home card
-import htmlHomeCard from '../modules/htmlHomeCard.mjs'
+import {elementCardHome} from '../modules/htmlHomeCard.js'
 
 
 

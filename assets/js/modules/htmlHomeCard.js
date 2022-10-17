@@ -2,6 +2,10 @@
 
 // import fitur parse string to string 
 import numberWithCommas from './ParseToString.mjs'
+
+
+
+
 let fragmentContainer = document.querySelector('.container-country-home')
 function notFound(value = ""){
     return fragmentContainer.innerHTML = `
@@ -15,7 +19,6 @@ function notFound(value = ""){
 function elementCardHome(data){
     let fragmentContainer = document.querySelector('.container-country-home')
     let fragment = ``
-    console.log(data)
     if(data === undefined){
       notFound()
       return;
