@@ -158,7 +158,41 @@ section.c-main-home {
   justify-items: right;
   align-items: center;
 }
+.btn-region {
+  position: relative;
+  padding: 0;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+  border-radius: 0.5em;
+  background: var(--Light-Mode-Elements);
+}
 
+/* .item-option  {
+  cursor: pointer;
+  color: var(--light-mode-text);
+  outline: none;
+  background: transparent;
+  height: 100%;
+  border: none;
+  top: 0;
+  left: 0;
+} */
+#select-region {
+  width: 100%;
+  padding: 0 0.5em;
+  height: 100%;
+  padding: 10px 0;
+  border: none;
+  color: var(--light-mode-text);
+  background: var(--Light-Mode-Elements);
+}
+#select-region option {
+  border: none;
+  padding: 0;
+  background-color: red;
+  color: var(--light-mode-text);
+}
 /* .dropdown-option .dropdown-item:hover {
   background: var(--Light-Mode-hover);
   color: var(--light-mode-hover-text);

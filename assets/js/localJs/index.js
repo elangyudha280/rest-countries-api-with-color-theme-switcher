@@ -20,7 +20,7 @@ btn_mode.addEventListener('click',function(){
 })
 
 
-api.allDataCountry('https://restcountries.com/v3.1/all')
+// api.allDataCountry('https://restcountries.com/v3.1/all')
 
 
 
