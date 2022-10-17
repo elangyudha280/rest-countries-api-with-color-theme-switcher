@@ -14,11 +14,11 @@ btn_mode.addEventListener('click',function(){
 })
 
 
-fetch('https://restcountries.com/v3.1/all')
+fetch('https://restcountries.com/v3.1/allasdasd')
 .then(Response => {
     if(!Response.ok){
         notFound()
-        return;
+        throw new Error('bad server')
     }
     return Response.json();
 })
