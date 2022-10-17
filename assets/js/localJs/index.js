@@ -1,4 +1,5 @@
-
+import {elementCardHome,notFound} from '../modules/htmlHomeCard.js'
+console.log(elementCardHome,notFound)
 
 // fitur dark and light mode
 let btn_mode = document.querySelector('.btn-mode')
@@ -11,3 +12,19 @@ btn_mode.addEventListener('click',function(){
         html_element.dataset.colorMode = 'light'
     }
 })
+
+
+
+fetch('https://restcountries.com/v3.1/all')
+.then(Response => {
+    if(!Response.ok){
+        notFound()
+        return;
+    }
+    return Response.json();
+})
+.then(data=>{
+    
+    elementCardHome(data)
+})
+.catch(err => {console.log(err)})
