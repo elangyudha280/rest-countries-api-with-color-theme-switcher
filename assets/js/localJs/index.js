@@ -1,9 +1,8 @@
 
 // import module api
-import api from '../modules/api.mjs'
-
+import {api} from '../modules/api.js'
 // import module element html home card
-import {elementCardHome} from '../modules/htmlHomeCard.js'
+import {elementCardHome,notFound,loading} from '../modules/htmlHomeCard.js'
 
 
 
@@ -21,19 +20,33 @@ btn_mode.addEventListener('click',function(){
 })
 
 
-fetch('https://restcountries.com/v3.1/all')
-.then(Response => {
-    if(!Response.ok){
-        notFound()
-        throw new Error('bad server')
-    }
-    return Response.json();
-})
-.then(data=>{
-    elementCardHome(data)
-})
-.catch(err => {console.error(err)})
+api.allDataCountry('https://restcountries.com/v3.1/all')
 
 
 
 // api for get data by region
+
+    
+        let nav_country = document.querySelector('.dropdown-option')
+        let dropdown_item = [...document.querySelectorAll('.dropdown-item')]
+
+    nav_country.addEventListener('click',(e)=>{
+        loading()
+    
+        let targetText = e.target.textContent;
+        dropdown_item.forEach(el => {
+            if(el.classList.contains('active-dropdown-item')){
+                el.classList.remove('active-dropdown-item')
+            }
+        });
+    
+        e.target.classList.add('active-dropdown-item')
+    
+            if(targetText === 'All'){
+                api.allDataCountry('https://restcountries.com/v3.1/all')
+            
+            }
+            else{
+                api.getDataByRegion(`https://restcountries.com/v3.1/region/${targetText}`)
+            }
+    })

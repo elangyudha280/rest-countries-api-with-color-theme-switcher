@@ -3,6 +3,8 @@
 :root {
   --font: 'Nunito Sans', sans-serif;
   --Light-Mode-Background: hsl(0, 0%, 98%);
+  --Light-Mode-hover: hsl(209, 23%, 22%);
+  --light-mode-hover-text: hsl(0, 0%, 100%);
   --light-mode-text: hsl(200, 15%, 8%);
   --Light-Mode-Input: hsl(0, 0%, 52%);
   --Light-Mode-Elements: hsl(0, 0%, 100%);
@@ -12,6 +14,8 @@ html[data-color-mode='dark'] {
   --Light-Mode-Background: hsl(207, 26%, 17%);
   --light-mode-text: hsl(0, 0%, 100%);
   --Light-Mode-Elements: hsl(209, 23%, 22%);
+  --Light-Mode-hover: hsl(0, 0%, 100%);
+  --light-mode-hover-text: hsl(209, 23%, 22%);
 }
 
 /* not found */
@@ -19,7 +23,6 @@ html[data-color-mode='dark'] {
   position: absolute;
   width: 100%;
   height: 150px;
-  border: 1px solid red;
   display: grid;
   color: var(--light-mode-text);
   font-family: var(--font);
@@ -185,8 +188,12 @@ section.c-main-home {
   color: var(--light-mode-text);
 }
 .dropdown-option .dropdown-item:hover {
-  background: var(--Light-Mode-Elements);
-  color: var(--light-mode-text);
+  background: var(--Light-Mode-hover);
+  color: var(--light-mode-hover-text);
+}
+.dropdown-option .active-dropdown-item {
+  background: var(--Light-Mode-hover);
+  color: var(--light-mode-hover-text);
 }
 
 /* CODE FOR SECTION CONTEINER COUNTRY HOME */
@@ -194,7 +201,7 @@ section.container-country-home {
   position: relative;
   height: auto;
   width: 100%;
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
   margin-top: 2.5em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);

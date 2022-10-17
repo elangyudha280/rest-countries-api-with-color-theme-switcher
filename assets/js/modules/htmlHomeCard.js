@@ -14,6 +14,13 @@ function notFound(value = ""){
           </div>
         `
 }
+function loading(){
+  return fragmentContainer.innerHTML = `
+  <div class="loading-container">
+              <div class="spinner-border text-info" role="status">
+              </div>
+            </div>`
+}
 
 
 function elementCardHome(data){
@@ -46,4 +53,4 @@ function elementCardHome(data){
 
 
 
-export {elementCardHome,notFound};
+export {elementCardHome,notFound,loading};
