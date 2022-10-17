@@ -163,34 +163,31 @@ section.c-main-home {
   padding: 0;
   height: 100%;
   border: none;
+  padding: 0 0.8em;
   overflow: hidden;
+  box-shadow: 0 0em 0.5em -2px var(--shadow-navbar);
   border-radius: 0.5em;
+  font-family: var(--font);
+  font-weight: 600;
   background: var(--Light-Mode-Elements);
 }
 
-/* .item-option  {
-  cursor: pointer;
-  color: var(--light-mode-text);
-  outline: none;
-  background: transparent;
-  height: 100%;
-  border: none;
-  top: 0;
-  left: 0;
-} */
 #select-region {
   width: 100%;
   padding: 0 0.5em;
   height: 100%;
+  font-weight: 600;
   padding: 10px 0;
-  border: none;
+  outline: transparent;
+  border: transparent;
+  cursor: pointer;
   color: var(--light-mode-text);
   background: var(--Light-Mode-Elements);
 }
 #select-region option {
   border: none;
-  padding: 0;
-  background-color: red;
+  margin: 1em;
+  font-weight: 300;
   color: var(--light-mode-text);
 }
 /* .dropdown-option .dropdown-item:hover {
