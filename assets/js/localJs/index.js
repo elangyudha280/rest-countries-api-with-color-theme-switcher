@@ -1,3 +1,4 @@
+
 // import module api
 import api from '../modules/api.mjs'
 
@@ -20,6 +21,17 @@ btn_mode.addEventListener('click',function(){
 })
 
 
-// FITUR GET ALL DATA API
+fetch('https://restcountries.com/v3.1/all')
+.then(Response => {
+    if(!Response.ok){
+        notFound()
+        throw new Error('bad server')
+    }
+    return Response.json();
+})
+.then(data=>{
+    elementCardHome(data)
+})
+.catch(err => {console.error(err)})
 
-api.getApi('https://restcountries.com/v3.1/all',htmlHomeCard)
+
