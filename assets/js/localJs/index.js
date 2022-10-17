@@ -14,7 +14,6 @@ btn_mode.addEventListener('click',function(){
 })
 
 
-
 fetch('https://restcountries.com/v3.1/all')
 .then(Response => {
     if(!Response.ok){
@@ -24,7 +23,7 @@ fetch('https://restcountries.com/v3.1/all')
     return Response.json();
 })
 .then(data=>{
-    
     elementCardHome(data)
 })
-.catch(err => {console.log(err)})
+.catch(err => {console.error(err)})
+
