@@ -190,14 +190,10 @@ section.c-main-home {
   font-weight: 300;
   color: var(--light-mode-text);
 }
-/* .dropdown-option .dropdown-item:hover {
-  background: var(--Light-Mode-hover);
-  color: var(--light-mode-hover-text);
+#select-region option {
+  color: var(--light-mode-text);
+  background: var(--Light-Mode-Elements);
 }
-.dropdown-option .active-dropdown-item {
-  background: var(--Light-Mode-hover);
-  color: var(--light-mode-hover-text);
-} */
 
 /* CODE FOR SECTION CONTEINER COUNTRY HOME */
 section.container-country-home {
