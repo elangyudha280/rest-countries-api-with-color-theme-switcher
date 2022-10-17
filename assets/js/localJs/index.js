@@ -27,26 +27,26 @@ btn_mode.addEventListener('click',function(){
 // api for get data by region
 
     
-        let nav_country = document.querySelector('.dropdown-option')
-        let dropdown_item = [...document.querySelectorAll('.dropdown-item')]
+    //     let nav_country = document.querySelector('.dropdown-option')
+    //     let dropdown_item = [...document.querySelectorAll('.dropdown-item')]
 
-    nav_country.addEventListener('click',(e)=>{
-        loading()
+    // nav_country.addEventListener('click',(e)=>{
+    //     loading()
     
-        let targetText = e.target.textContent;
-        dropdown_item.forEach(el => {
-            if(el.classList.contains('active-dropdown-item')){
-                el.classList.remove('active-dropdown-item')
-            }
-        });
+    //     let targetText = e.target.textContent;
+    //     dropdown_item.forEach(el => {
+    //         if(el.classList.contains('active-dropdown-item')){
+    //             el.classList.remove('active-dropdown-item')
+    //         }
+    //     });
     
-        e.target.classList.add('active-dropdown-item')
+    //     e.target.classList.add('active-dropdown-item')
     
-            if(targetText === 'All'){
-                api.allDataCountry('https://restcountries.com/v3.1/all')
+    //         if(targetText === 'All'){
+    //             api.allDataCountry('https://restcountries.com/v3.1/all')
             
-            }
-            else{
-                api.getDataByRegion(`https://restcountries.com/v3.1/region/${targetText}`)
-            }
-    })
+    //         }
+    //         else{
+    //             api.getDataByRegion(`https://restcountries.com/v3.1/region/${targetText}`)
+    //         }
+    // })
