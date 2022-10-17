@@ -35,3 +35,5 @@ fetch('https://restcountries.com/v3.1/all')
 .catch(err => {console.error(err)})
 
 
+
+// api for get data by region
