@@ -14,7 +14,7 @@ btn_mode.addEventListener('click',function(){
 })
 
 
-fetch('https://restcountries.com/v3.1/allasdasd')
+fetch('https://restcountries.com/v3.1/all')
 .then(Response => {
     if(!Response.ok){
         notFound()
