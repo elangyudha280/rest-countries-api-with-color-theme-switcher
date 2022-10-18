@@ -12,7 +12,6 @@ let api = {
             return Response.json();
         })
         .then(data=>{
-        
             elementCardHome(data)
         })
         .catch(err => {console.error(err)})

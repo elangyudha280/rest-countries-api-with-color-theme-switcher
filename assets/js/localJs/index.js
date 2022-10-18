@@ -20,13 +20,12 @@ btn_mode.addEventListener('click',function(){
 })
 
 
-api.allDataCountry('https://restcountries.com/v3.1/all')
+// api.allDataCountry('https://restcountries.com/v3.1/all')
 
 
 
 
 let select_region = document.querySelector('#select-region')
-setTimeout(() => {
     select_region.addEventListener('input',(e)=>{
         let value = select_region.value;
         select_region.setAttribute('disabled','')
@@ -40,7 +39,6 @@ setTimeout(() => {
             }
     })
 
-}, 1000);
 
     window.addEventListener('load',()=>{
         select_region.value = 'All';
