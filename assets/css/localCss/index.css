@@ -35,8 +35,9 @@ html[data-color-mode='dark'] {
 
 .loading-container {
   position: absolute;
-  border: 1px solid orange;
   width: 100%;
+  top: 0;
+  left: 0;
   height: 50px;
   z-index: 4;
   display: grid;
@@ -95,11 +96,9 @@ nav.nav-home {
 
 /* CODE FOR MAIN CONTAINER  HOME */
 section.c-main-home {
-  border: 1px solid red;
   margin-top: 2em;
   height: auto;
   position: relative;
-  overflow-x: hidden;
 }
 
 .c-main-home .nav-country {
@@ -203,7 +202,6 @@ section.container-country-home {
   position: relative;
   height: auto;
   width: 100%;
-  border: 1px solid cyan;
   margin-top: 2.5em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
