@@ -29,7 +29,8 @@ let search_input = document.querySelector('.input-search')
 
 let select_region = document.querySelector('#select-region')
 
-    search_input.addEventListener('input',(e)=>{
+    search_input.addEventListener('change',(e)=>{
+        select_region.setAttribute('disabled','')
         loading()
         let value_name = search_input.value;
         if(value_name === ''){

@@ -50,9 +50,10 @@ let api = {
                 elementCardHome(data)
         })
         .catch(err => {return err})
-        .finally(
-            ()=>{search_input.removeAttribute('disabled')}
-            )
+        .finally(()=>{
+                search_input.removeAttribute('disabled')
+                select_region.removeAttribute('disabled')
+            })
     }
 }
 
