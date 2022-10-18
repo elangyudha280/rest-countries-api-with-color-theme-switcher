@@ -1,4 +1,4 @@
-import {select_region} from '../localJs/index.js'
+import {select_region,search_input} from '../localJs/index.js'
 import {elementCardHome,notFound} from './htmlHomeCard.js'
 
 let api = {
@@ -14,9 +14,10 @@ let api = {
         .then(data=>{
             elementCardHome(data)
         })
-        .catch(err => {console.error(err)})
+        .catch(err => {return err})
         .finally(()=>{
             select_region.removeAttribute('disabled')
+            search_input.removeAttribute('disabled')
         })
     },
     getDataByRegion(url){
@@ -31,10 +32,27 @@ let api = {
     .then(data=>{
         elementCardHome(data)
     })
-    .catch(err => {console.error(err)})
+    .catch(err => {return err})
     .finally(()=>{
         select_region.removeAttribute('disabled')
+        search_input.removeAttribute('disabled')
     })
+    },
+    getCountryByInput(url,value_input){
+        return fetch(url).then(Response =>{
+            if(!Response.ok){
+                notFound(value_input)
+                // throw new Error('Country Not Found')
+            }
+            return Response.json();
+        })
+        .then(data =>{
+                elementCardHome(data)
+        })
+        .catch(err => {return err})
+        .finally(
+            ()=>{search_input.removeAttribute('disabled')}
+            )
     }
 }
 
