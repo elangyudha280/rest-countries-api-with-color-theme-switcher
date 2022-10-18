@@ -34,3 +34,59 @@ main.template-detail {
   height: 100vh;
   padding-bottom: 2em;
 }
+
+/* CODE FOR NAVBAR */
+nav.nav-home {
+  box-shadow: 0 0em 1em -5px var(--shadow-navbar);
+  padding: 1em 0.5em;
+  background: var(--Light-Mode-Elements);
+  font-family: var(--font);
+}
+.nav-home .nav-title {
+  font-weight: 800;
+  color: var(--light-mode-text);
+
+  transition: 0.3s;
+}
+
+.btn-mode {
+  transition: 0.3s;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  outline: none;
+  color: var(--light-mode-text);
+  border: none;
+  background: transparent;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.btn-mode:active {
+  border: none;
+}
+
+/* CODE FOR SECTION CONTAINER MAIN DETAIL */
+
+section.c-main-detail {
+  position: relative;
+  border: 1px solid cyan;
+  margin-top: 5em;
+}
+
+.c-main-detail .btn-back {
+  position: relative;
+  outline: none;
+  border: none;
+  padding: 0.5em 1.5em;
+  background: var(--Light-Mode-Elements);
+  color: var(--light-mode-text);
+  border-radius: 0.2em;
+  user-select: none;
+  text-decoration: none;
+  font-family: var(--font);
+  font-weight: 300;
+  box-shadow: 0 0em 0.4em 1px var(--shadow-navbar);
+}
+
+.btn-back i {
+  margin-right: 0.2em;
+}
