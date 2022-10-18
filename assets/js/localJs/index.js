@@ -20,7 +20,7 @@ btn_mode.addEventListener('click',function(){
 })
 
 
-// api.allDataCountry('https://restcountries.com/v3.1/all')
+api.allDataCountry('https://restcountries.com/v3.1/all')
 
 
 
@@ -38,6 +38,10 @@ let select_region = document.querySelector('#select-region')
                 api.getDataByRegion(`https://restcountries.com/v3.1/region/${value}`)
             }
     })
+
+
+
+    // fiutr get data by input value
 
 
     window.addEventListener('load',()=>{
