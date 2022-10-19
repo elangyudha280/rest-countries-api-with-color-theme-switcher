@@ -38,17 +38,6 @@ html[data-color-mode='dark'] {
 }
 /* loading */
 
-.loading-container {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 50px;
-  z-index: 4;
-  display: grid;
-  place-items: center;
-}
-
 main.template-detail {
   overflow-y: auto;
   overflow-x: hidden;
