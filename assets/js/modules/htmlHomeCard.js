@@ -21,10 +21,15 @@ function notFound(value = ""){
 // function page login
 function loading( ){
   return fragmentContainer.innerHTML = `
-  <div class="loading-container">
-              <div class="spinner-border text-info" role="status">
-              </div>
-            </div>`
+  <div class="building-blocks">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>`
 }
 
 // function fragment element card in home
