@@ -10,8 +10,8 @@ let fragmentContainer = document.querySelector('.container-country-home')
 
 
 // function page not found
-function notFound(value = ""){
-    return fragmentContainer.innerHTML = `
+function notFound(el=fragmentContainer,value = ""){
+    return el.innerHTML = `
             <div class="not-found">
             <span class="text-not-found">No country matches "<span class="country-not-found">${value}</span>" </span>
           </div>
