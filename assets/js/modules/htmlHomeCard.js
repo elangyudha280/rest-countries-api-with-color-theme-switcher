@@ -10,8 +10,8 @@ let fragmentContainer = document.querySelector('.container-country-home')
 
 
 // function page not found
-function notFound(el=fragmentContainer,value = ""){
-    return el.innerHTML = `
+function notFound(value = ""){
+    return fragmentContainer.innerHTML = `
             <div class="not-found">
             <span class="text-not-found">No country matches "<span class="country-not-found">${value}</span>" </span>
           </div>
@@ -81,14 +81,19 @@ function loopingNativeName(el_api){
     return el_api[el].official
   }
 }
-
+let detail_container = document.querySelector('.container-country-detail');
+function notFoundDetail(value = ""){
+  return detail_container.innerHTML = `
+          <div class="not-found">
+          <span class="text-not-found">No country matches "<span class="country-not-found">${value}</span>" </span>
+        </div>`
+}
 // FUNCTION FRAGMENT DETAIL
 function fragmentDetail(data){
-  let detail_container = document.querySelector('.container-country-detail');
 
   let fragment = ``
   if(data === undefined){
-    notFound(detail_container)
+    notFoundDetail()
     return
   }
   else{
@@ -151,4 +156,4 @@ function fragmentDetail(data){
 
 
 
-export {elementCardHome,notFound,loading,fragmentDetail};
+export {elementCardHome,notFound,loading,fragmentDetail,notFoundDetail};

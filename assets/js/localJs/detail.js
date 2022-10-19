@@ -3,7 +3,7 @@
 import {getParams} from '../modules/getParams.js'
 
 // import fragment html
-import {fragmentDetail,notFound} from '../modules/htmlHomeCard.js'
+import {fragmentDetail,notFoundDetail} from '../modules/htmlHomeCard.js'
 
 // fiturt light and dark mode
 
@@ -23,7 +23,7 @@ let detail_container = document.querySelector('.container-country-detail');
 
 fetch(`https://restcountries.com/v3.1/name/${getParams('name')}`).then(Response => {
     if(!Response.ok){
-        notFound(detail_container)
+        notFoundDetail()
         return 'error'
     }
     return Response.json()
