@@ -36,6 +36,9 @@ let select_region = document.querySelector('#select-region')
         if(value_name === ''){
             api.allDataCountry('https://restcountries.com/v3.1/all')
         }
+        else if(value_name.length >= 20){
+            search_input.value = ''
+        }
         else{
             api.getCountryByInput(`https://restcountries.com/v3.1/name/${value_name}`,value_name)
         }

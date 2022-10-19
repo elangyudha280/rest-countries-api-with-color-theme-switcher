@@ -42,6 +42,7 @@ let api = {
         return fetch(url).then(Response =>{
             if(!Response.ok){
                 notFound(value_input)
+                return
                 // throw new Error('Country Not Found')
             }
             return Response.json();
