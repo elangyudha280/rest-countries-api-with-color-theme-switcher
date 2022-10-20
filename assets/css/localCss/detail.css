@@ -358,6 +358,30 @@ section.container-country-detail {
   }
 }
 
+@media screen and (max-width: 385px) {
+  .nav-home .nav-title {
+    font-size: 1em;
+  }
+  .btn-mode {
+    font-size: 0.8em;
+  }
+  .card-item-country .card-header img {
+    width: 100%;
+    height: 130px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .nav-home .nav-title {
+    font-size: 0.8em;
+  }
+  .btn-mode {
+    font-size: 0.8em;
+  }
+  .card-item-country .card-header img {
+    width: 100%;
+    height: 120px;
+  }
+}
 @media screen and (max-width: 350px) {
   .footer-info-right button {
     flex: 1;

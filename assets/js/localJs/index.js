@@ -13,9 +13,11 @@ let html_element = document.querySelector('html')
 btn_mode.addEventListener('click',function(){
     if(html_element.dataset.colorMode === 'light'){
         html_element.dataset.colorMode = 'dark';
+        document.querySelector('.text-mode').textContent = 'Light Mode'
     }
     else{
         html_element.dataset.colorMode = 'light'
+        document.querySelector('.text-mode').textContent = 'Dark Mode'
     }
 })
 
