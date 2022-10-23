@@ -45,7 +45,7 @@ function elementCardHome(data){
       fragment += `
       <div class="card-item-country">
       <div class="card-header">
-      <a href="otherPage/detail.html?name=${el.name.common}">  <img src="${el.flags.png}" class="img-card-header" alt=""></a>
+      <a href="otherPage/detail.html?name=${el.name.common}">  <img src="${el.flags.png}" loading="lazy" class="img-card-header" alt=""></a>
       </div>
       <div class="card-body">
           <h6 class="title-card-country">${el.name.common}</h6>
